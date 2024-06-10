@@ -1,6 +1,7 @@
 module "common_modules" {
+  # source               = "./common_modules"
   # source               = "git::https://github.com/jamalshahverdiev/terraform-common-modules.git?ref=main"
-  source               = "git::https://github.com/jamalshahverdiev/terraform-common-modules.git?ref=0.2.0"  
+  source               = "git::https://github.com/jamalshahverdiev/terraform-common-modules.git?ref=0.3.0"  
   env                  = local.env
   team                 = local.team
   service_name         = local.service_name
@@ -19,12 +20,8 @@ module "common_modules" {
   services_secret_path = local.services_secret_path
   secret               = local.secret
   SERVICES_TOKEN       = var.SERVICES_TOKEN
+  postgres_enabled     = true
+  mongodb_enabled      = true
+  keycloak_enabled     = true
 }
 
-  # Enable modules
-  # postgres_enabled     = true
-  # mongodb_enabled      = true
-  # ad_enabled           = true
-  # keycloak_enabled     = true
-  # vault_enabled        = true
-  # airtable_enabled     = true
