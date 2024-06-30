@@ -22,9 +22,6 @@ locals {
       ]
     ]
   ])
-  account_id           = "111111111"
-  env                  = "dev"
-  region               = "us-east-1"
   pg_svc_path          = "postgresql"
   mongo_svc_path       = "mongodb"
   keycloak_path        = "keycloak"
