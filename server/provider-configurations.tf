@@ -4,10 +4,10 @@ provider "vault" {
 }
 
 provider "keycloak" {
-    client_id     = "admin-cli"
-    username      = var.keycloak_admin_user
-    password      = var.keycloak_admin_pass
-    url           = var.keycloak_url
+  client_id = "admin-cli"
+  username  = var.keycloak_admin_user
+  password  = var.keycloak_admin_pass
+  url       = var.keycloak_url
 }
 
 provider "ad" {

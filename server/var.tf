@@ -109,26 +109,26 @@ variable "winrm_insecure" {
   type    = bool
 }
 
-variable "ou_name" { 
-  default = "company" 
-  type = string
+variable "ou_name" {
+  default     = "company"
+  type        = string
   description = "value for the ou_name"
 }
 
-variable "path" { 
-  default = "ou=company,dc=example,dc=local"
-  type = string
-  description = "value for the AD path" 
+variable "path" {
+  default     = "ou=company,dc=example,dc=local"
+  type        = string
+  description = "value for the AD path"
 }
 
-variable "description" { 
-  default = "Company OUT for all Teams"
+variable "description" {
+  default     = "Company OUT for all Teams"
   description = "Description for the OU"
-  type = string 
+  type        = string
 }
 
-variable "protected" { 
-  default = false 
+variable "protected" {
+  default     = false
   description = "Protected OU or not"
-  type = bool
+  type        = bool
 }
